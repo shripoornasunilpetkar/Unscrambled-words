@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unscrambled Words</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="h-full w-full m-0 p-0 overflow-x-auto font-['Roboto']">
+  <!-- Timer -->
+  <div class="timer-wrapper">
+    <div id="timer">00:00</div>
+  </div>
+
+  <!-- Animated background -->
+  <div id="star-bg"></div>
+
+  <!-- Pause Button -->
+  <button id="pauseBtn" class="pause-btn text-3xl" title="Pause" onclick="handlePause()" style="background-color: #865DFF;">&#10073;&#10073;</button>
+
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-buttons">
+      <button id="musicBtn" class="sidebar-btn music text-3xl" title="Music" onclick="handleMute()">&#127925;</button>
+      <button id="restartBtn" class="sidebar-btn restart text-3xl" title="Restart" onclick="handleRestart()" style="background-color: #FFD700 !important; width: 60px !important; height: 60px !important; border-radius: 50% !important; display: flex !important; align-items: center !important; justify-content: center !important; color: white !important; border: none !important; cursor: pointer !important; box-shadow: 0 8px 24px rgba(0,0,0,0.3) !important;">&#8635;</button>
+    </div>
+  </div>
+
+  <!-- Help Button -->
+  <button id="helpBtn" class="help-btn text-3xl" title="Help" onclick="handleHelp()" style="background-color: #14CC60 !important; width: 60px !important; height: 60px !important; border-radius: 50% !important; display: flex !important; align-items: center !important; justify-content: center !important; color: white !important; border: none !important; cursor: pointer !important; box-shadow: 0 8px 24px rgba(0,0,0,0.3) !important; position: fixed !important; top: 24px !important; right: 24px !important; z-index: 30 !important;">?</button>
+
+  <!-- Centered Game Container -->
+  <div class="main-center">
+    <div class="container text-black rounded-2xl p-6 relative">
+      <div class="flex justify-between items-center mb-4 p-3 rounded-lg">
+        <div class="level-box text-3xl font-medium text-white px-6 py-3 rounded-lg">Level <span id="level-number" class="font-bold">1</span></div>
+        <div class="score-box text-3xl font-bold text-white px-6 py-3 rounded-lg">SCORE <span class="ml-1 text-purple-200 px-2 py-1 rounded" id="score-value">0.000</span></div>
+      </div>
+     
+      <div id="word-container" class="flex flex-wrap gap-2 justify-center mb-4 min-h-[400px] items-center">
+        <!-- Word tiles will be dynamically added here -->
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

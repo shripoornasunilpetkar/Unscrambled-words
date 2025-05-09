@@ -1,0 +1,28 @@
+{
+  "gameTitle": "Unscrambled Words",
+  "instructions": "Unscramble the sentence by clicking the words in the correct order. Use the sidebar to pause, restart, or mute the game.",
+  "audio": {
+    "background": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2-cherry-cute-bgm-271158-zIouDJ4FGUOTEpIXP10RZWnp9zff4A.mp3",
+    "success": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/success-MdF7nLdkwPlakm27xQWQmfipYHDzTL.webm",
+    "uiClick": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ui-click-IH3biGSjh8pksEtf1bHOC49dGslDPU.webm",
+    "incorrect": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/incorrect-EsdPobrzIGyWVonDaJINuAhdNb496F.webm",
+    "levelWin": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/level-win-SxCsRZQKipPLOAIFiceyYmP8n5rMn7.webm"
+  },
+  "levels": [
+    {
+      "sentence": "I love to play games so I play",
+      "levelNum": 1,
+      "baseScore": 100
+    },
+    {
+      "sentence": "Those who move don't notice their chains",
+      "levelNum": 2,
+      "baseScore": 150
+    },
+    {
+      "sentence": "Tell me and I forget teach me and I remember involve me and I learn",
+      "levelNum": 3,
+      "baseScore": 200
+    }
+  ]
+} 
